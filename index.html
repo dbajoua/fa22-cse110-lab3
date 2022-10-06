@@ -10,12 +10,11 @@
 <body>
 
     <header>
-        <h1>Meeting Minutes Title: Climate Change APP Initiative</h2>
+        <h1>Meeting Minutes Title: Climate Change APP Initiative</h1>
 
         <h2>Focus/Meeting Subtitle: new ideas and second phase goals</h2>
     
-        <h3>Date: </h3>
-        <input type="date" value="1984-01-01" >
+        <h3>Date: 01/01/1965 </h3>
         
         <hr>
         <b>Note:</b>
@@ -57,10 +56,7 @@
                 <br>
                 <em>Side Note: Jackson Smith is ill.</em>
                 
-                <h4>Please select next meeting preference:</h4>
-                <h4> <input type="radio"/> virtual </h4>
-                <h4> <input type="radio"/> in person </h4>
-                <h4> <input type="radio"/> either option </h4>
+               
 
 
             </ol>
@@ -73,7 +69,7 @@
             <h1 id="agenda">Agenda:</h1>
 
             <p>
-                The goal is to discuss and brainstop how to make
+                The goal is to discuss and brainstorm how to make
                 the application smarter. Using integrative technologies, 
                 the hope is to have a more feasible product, and ensure it 
                 is user friendly while serving its purpose in the Climate
@@ -116,16 +112,51 @@
         <hr>
         <section>
             <h1 id="pictures">Pictures Presented:</h1>
+
+            <img 
+            src="https://plus.unsplash.com/premium_photo-1661266845347-696165a65df3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80"
+            alt="group"
+            width="350"
+            />
+
+            <img 
+            src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+            alt="group"
+            width="350"
+            />
+
+         
         </section>
 
         <hr>
         <section>
             <h1 id="audio">Meeting audio:</h1>
+
+            <figure>
+                <figcaption>Listen here:
+                </figcaption>
+                <audio 
+                     controls
+                     src="91.m4a">
+                     <a href="91.m4a">
+                        </a>
+
+               </audio>
+            </figure>
+
+
         </section>
 
         <hr>
         <section>
             <h1 id="video">Meeting video:</h1>
+
+            <video controls width="250">
+
+               <source src="fanVideo.mp4">
+
+            </video>
+
         </section>
         
         
@@ -143,13 +174,46 @@
                 <button>Submit</button>
     
             </form>
+     
 
             <textarea name="thankyou" id="thankyou" cols="30" rows="10">
-                Thank you!
+            Thank you! Comment additional notes here:
             </textarea>
 
+            <label for="select">How did you find this form?</label>
+
+            <select name="ways" id="select">
+                <option value="">Please select</option>
+                    <option value="email">email</option>
+                    <option value="text">text</option>
+                    <option value="messenger chat">messenger chat</option>
+            </select>
+
+            <label for="meet">When do you want to next meet?
+              </label>
+
+             <input list="meet" id="meet" name="meet" >
+
+             <datalist id="meet">
+                <option value="MON">
+                <option value="WED">
+             </datalist>
+
+             <h4>Please select next meeting preference or both if no preference:</h4>
+             <h4> <input type="radio"/> virtual </h4>
+             <h4> <input type="radio"/> in person </h4>
+
+             <h4 id="data and place">Select Date and Preferences:</h1>
+             <ul>
+                 <li> <input type="date"/> </li>
+                 <li> <input type="checkbox"/> lunch ok</li>
+                 <li> <input type="checkbox"/> weekends ok</li>
+             </ul>       
+             
+
         </fieldset>
-      
+  
+     
 
         <br>
 
