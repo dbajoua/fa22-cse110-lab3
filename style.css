@@ -1,0 +1,183 @@
+/* CSS document for index.html which contains Meeting Minutes Site.
+Styling to be added for better readability/presentation of site */
+
+
+@font-face {
+    font-family: "myFont";
+    src: url(Roboto-Medium.ttf); 
+  }
+  
+p {
+    font-family: myFont;
+   
+}
+
+/* background of everything * set to snow white */
+* {
+    background-color: #FFFAFA;
+}
+
+h1 {
+    background-color: palegreen;
+} 
+
+/* attendance class */
+.attendance {
+    border-style: dotted;
+    border-color: rgb(54,69,79);
+    border-width: 0.1cm;
+    border-radius: 0.1in;
+
+    padding-top: 0cm;
+    padding-bottom: 0.5cm ;
+    padding-left: 0.5cm ;
+    padding-right: 0.5cm ;
+
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    margin-left: 80px; 
+    margin-right: 1100px; 
+
+    height: 2.3in;
+    width: 2.3in;
+    max-width: 2.5in;
+    min-width: 2.1in;
+
+    
+}
+
+/* attendance class */
+.video {
+    border-style: dotted;
+    border-color: rgb(54,69,79);
+    border-width: 0.1cm;
+    border-radius: 0.1in;
+    padding: 10cm, 10cm, 10cm, 10cm; 
+    margin: auto; 
+
+
+    
+}
+
+/*flexbox properties on agenda class */
+.agenda {
+    display: flex;
+    flex-flow: column wrap; 
+    gap: 5px;
+    flex-basis: auto;
+}
+
+.misc {
+    border-style: dotted;
+    border-color: rgb(54,69,79);
+    border-width: 0.1cm;
+    border-radius: 1vh;
+    padding: 20vw, 20vw, 20vw, 20vw; 
+    margin: 1em,1em,1em,1em; 
+}
+
+
+/*agenda title */
+#agenda {
+    color: darkblue;
+    text-decoration: double;
+    text-align: center;
+    display: inline;
+    position: sticky; 
+}
+
+
+/*pictures presented title */
+#pictures {
+    display: block;
+    position: absolute;
+}
+
+.pictures {
+    display: grid;
+    justify-items: center; 
+    align-content: space-evenly;
+    row-gap: 30px;
+
+ /*   grid-row-start: 5in; */   
+   
+}
+
+/* pargraphs change color when screen max width reached   */
+@media (max-width: 1000px) {
+    p {
+        background-color: rgb(182, 197, 213);
+    }
+}
+
+/* not working */
+a[title] { 
+    color: blue;
+}
+
+/* will change the Need Updates Submit Button to grey when hover over it */
+button:hover {
+    color: darkgrey ;
+}
+
+/* button will become red when click it */
+button:active {
+    color: red ;
+}
+
+[class = "xtra"] {
+  background-color: orange;
+}
+
+
+/* selector list to color both h2,h3 elements */
+ h2, h3 {
+    color: darkcyan;
+}
+
+
+/* Descendant Combinator (changed Subtitle font) */
+body h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Child Combinator (changed Date font) */
+header > h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* adjacent sibling conbinator (changed Contents font to bolder)*/
+hr + i {
+    font-family: bold;
+}
+
+/* general sibling combinator */
+video ~ p {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Combining 2 selectors element.class */
+h1.agenda {
+    font-style:italic;
+}
+
+a.xtra {
+    color:blue;
+}
+
+a[href="https://www.apple.com"] {
+    font-style: italic;
+}
+
+
+
+
+  
+
+
+
+p,
+ul {
+    border: 2px solid rgb(41, 187, 220);
+}
+
