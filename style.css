@@ -2,26 +2,29 @@
 Styling to be added for better readability/presentation of site */
 
 
+/* special font used from google */
 @font-face {
     font-family: "myFont";
     src: url(Roboto-Medium.ttf); 
   }
   
+/* applied font to paragraphs */
 p {
     font-family: myFont;
    
 }
 
-/* background of everything * set to snow white */
+/* background of everything * set to snow white, used universal selector */
 * {
     background-color: #FFFAFA;
 }
 
+/* specific element background set */
 h1 {
     background-color: palegreen;
 } 
 
-/* attendance class */
+/* attendance class box styling */
 .attendance {
     border-style: dotted;
     border-color: rgb(54,69,79);
@@ -46,7 +49,7 @@ h1 {
     
 }
 
-/* attendance class */
+/* video class box styling */
 .video {
     border-style: dotted;
     border-color: rgb(54,69,79);
@@ -67,6 +70,7 @@ h1 {
     flex-basis: auto;
 }
 
+/* misc class box styling */
 .misc {
     border-style: dotted;
     border-color: rgb(54,69,79);
@@ -79,7 +83,7 @@ h1 {
 
 /*agenda title */
 #agenda {
-    color: darkblue;
+    color: hsl(240,100%,60%);
     text-decoration: double;
     text-align: center;
     display: inline;
@@ -93,27 +97,22 @@ h1 {
     position: absolute;
 }
 
+/* pictures class */
 .pictures {
     display: grid;
     justify-items: center; 
     align-content: space-evenly;
-    row-gap: 30px;
-
- /*   grid-row-start: 5in; */   
+    row-gap: 30px; 
    
 }
 
-/* pargraphs change color when screen max width reached   */
+/* paragraphs change color when screen max width reached  */
 @media (max-width: 1000px) {
     p {
         background-color: rgb(182, 197, 213);
     }
 }
 
-/* not working */
-a[title] { 
-    color: blue;
-}
 
 /* will change the Need Updates Submit Button to grey when hover over it */
 button:hover {
@@ -123,10 +122,6 @@ button:hover {
 /* button will become red when click it */
 button:active {
     color: red ;
-}
-
-[class = "xtra"] {
-  background-color: orange;
 }
 
 
@@ -165,17 +160,13 @@ a.xtra {
     color:blue;
 }
 
+/*attribute selector */
 a[href="https://www.apple.com"] {
     font-style: italic;
 }
 
 
-
-
-  
-
-
-
+/* apply border to paragraphs and lists */
 p,
 ul {
     border: 2px solid rgb(41, 187, 220);
