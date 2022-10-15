@@ -25,7 +25,7 @@
 - plan for next week progress and goals
 
 ## Motivational Image of the day:
-![CoolImage](coolpic.jpeg)
+![CoolImage](coolpic.jpg)
 
 ## Motivational quote of the day:
 > Uncertainty fuels discovery 
